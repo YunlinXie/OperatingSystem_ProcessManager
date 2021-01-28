@@ -1,4 +1,5 @@
 # OperatingSystem_ProcessManager
+NOTE: copy right reserved for Yunlin Xie, please do not use my code for your personal course assignments.
 
 Assignment Requirements and Introduction
 When a UNIX-like system starts up, it runs init. Nowadays this is a program called systemd on UNIX-like systems. On Mac the similar system manager is called launchd. It runs under PID of 1 and is an ancestor of all other processes. You can see the process with command "ps aux". If a process is left as an orphan (its parent dies), it gets reassigned as a child of PID 1. These service programs (init, systemd or launchd) are running in the background; on UNIX-like OSs these are commonly referred to as daemons and generally have names ending with the letter “d.” These programs ensure that things start up properly and stay running.  If a process crashes systemd (or launchd) can detect this and start it back up.
